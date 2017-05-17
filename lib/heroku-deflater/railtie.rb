@@ -16,7 +16,7 @@ module HerokuDeflater
     # The configuration block in config/application.rb overrides this.
     config.before_initialize do |app|
       cache_control = cache_control_manager(app)
-      cache_control.setup_max_age(86400)
+      cache_control.setup_max_age(5184000)
     end
 
     def self.cache_control_manager(app)

@@ -1,6 +1,6 @@
 module HerokuDeflater
   class CacheControlManager
-    DEFAULT_MAX_AGE = '86400'.freeze
+    DEFAULT_MAX_AGE = '5184000'.freeze
     attr_reader :app, :max_age
 
     def initialize(app)
